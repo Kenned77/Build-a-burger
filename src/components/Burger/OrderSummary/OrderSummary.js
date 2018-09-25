@@ -15,10 +15,10 @@ const orderSummary = (props) => {
     <Aux>
       <h3>Your Order</h3>
       <p>A delicious burger with the following ingredients:</p>
-      <h1>Too much meat Sean Linke!!!</h1>
       <ul>
         {ingredientSummary}
       </ul>
+      <p><strong>Your Total: ${props.price.toFixed(2)}</strong></p>
       <p>Continue to checkout?</p>
       <Button btnType="Danger" clicked={props.purchaseCancled}>CANCEL</Button>
       <Button btnType="Success" clicked={props.purchaseContinued}>CONTINUE</Button>
